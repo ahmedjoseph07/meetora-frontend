@@ -17,7 +17,7 @@ const LandingPage = () => {
                 <div>
                     <h1><span className='connectText'>Connect</span> with your loved ones</h1>
                     <p>Best solution for chats, Audio and Video calls..</p>
-                    <div role='button' className='linkBtnDiv'><Link to="/home" className='linkBtn'>Get Started</Link></div>
+                    <div role='button' className='linkBtnDiv'><Link to="/auth" className='linkBtn'>Get Started</Link></div>
                 </div>
                 <div>
                     <img src="/mobile.png" alt="" />

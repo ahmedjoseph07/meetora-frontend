@@ -1,5 +1,6 @@
 /* Base styles */
 .landingPageContainer {
+    padding-inline: 4rem ;
     width: 100vw;
     height: 110vh;
     background-color: #46474c;
@@ -10,7 +11,7 @@
 
 /* Navbar styles */
 .landingPageContainer nav {
-    padding-inline: 1.2rem;
+    padding-inline: 1.4rem;
     padding-block: 1.6rem;
     display: flex;
     justify-content: space-between;
@@ -71,13 +72,22 @@
 }
 
 .linkBtn {
+    font-size: large;
     color: #ffffff;
     width: fit-content;
     text-decoration: none;
+    background-color: #495199;
+    padding: .75rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
 }
 
 .linkBtn:hover {
     text-decoration: underline;
+    background-color: rgb(107, 107, 127);
 }
 
 /* Responsive design for smaller devices */
@@ -115,7 +125,7 @@
 
 @media (max-width: 480px) {
     .landingMainContainer {
-        padding-inline: 1rem;
+        padding-inline: .5rem;
         flex-direction: column;
         align-items: center;
         text-align: center;

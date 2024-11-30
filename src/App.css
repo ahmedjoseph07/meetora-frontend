@@ -1,0 +1,135 @@
+/* Base styles */
+.landingPageContainer {
+    width: 100vw;
+    height: 110vh;
+    background-color: #46474c;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar styles */
+.landingPageContainer nav {
+    padding-inline: 1.2rem;
+    padding-block: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Enable wrapping for small screens */
+}
+
+.landingPageContainer nav div h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.landingPageContainer nav .navList {
+    display: flex;
+    gap: 1.5rem;
+    cursor: pointer;
+}
+
+/* Navigation for smaller screens */
+@media (max-width: 768px) {
+    .landingPageContainer nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .landingPageContainer nav .navList {
+        margin-top: 1rem;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+}
+
+/* Main container styles */
+.landingMainContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 3rem;
+    height: 70vh;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.landingMainContainer p {
+    font-size: 1.9rem;
+}
+
+.landingMainContainer div img {
+    height: 70vh;
+    width: auto;
+}
+
+.connectText {
+    color: #10111c;
+}
+
+.linkBtnDiv {
+    margin-top: 2rem;
+}
+
+.linkBtn {
+    color: #ffffff;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.linkBtn:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 1024px) {
+    .landingMainContainer {
+        padding-inline: 3rem;
+        margin-inline:1rem;
+    }
+}
+@media (max-width: 820px) {
+    .landingMainContainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-inline: 2rem;
+    }
+    .landingMainContainer img{
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .landingMainContainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .landingMainContainer div img {
+        height: auto;
+        width: 80%;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .landingMainContainer {
+        padding-inline: 1rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .landingMainContainer div img {
+        width: 80%;
+    }
+
+    .landingMainContainer p {
+        font-size: 1.5rem;
+    }
+
+    .landingMainContainer h1 {
+        font-size: 2rem;
+    }
+}
